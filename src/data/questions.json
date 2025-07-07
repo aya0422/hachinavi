@@ -1,0 +1,237 @@
+[
+  {
+    "id": "q1_infant_early",
+    "text": "哺乳びんや指しゃぶりをしていることが多いですか？",
+    "ageGroup": "infant_early"
+  },
+  {
+    "id": "q2_infant_early",
+    "text": "よだれが少なく、口が乾いていることが多いですか？",
+    "ageGroup": "infant_early"
+  },
+  {
+    "id": "q3_infant_early",
+    "text": "歯が生え始めていますか？",
+    "ageGroup": "infant_early"
+  },
+  
+  {
+    "id": "q1_infant_late",
+    "text": "歯が生え始めたけど、歯みがきを嫌がりますか？",
+    "ageGroup": "infant_late"
+  },
+  {
+    "id": "q2_infant_late",
+    "text": "甘い飲み物（ジュースなど）をよく与えていますか？",
+    "ageGroup": "infant_late"
+  },
+  {
+    "id": "q3_infant_late",
+    "text": "哺乳びんで寝る習慣がありますか？",
+    "ageGroup": "infant_late"
+  },
+  
+  {
+    "id": "q1_toddler",
+    "text": "お子さんの歯に黒い点や穴がありますか？",
+    "ageGroup": "toddler"
+  },
+  {
+    "id": "q2_toddler",
+    "text": "甘いものをよく食べたり飲んだりしますか？",
+    "ageGroup": "toddler"
+  },
+  {
+    "id": "q3_toddler",
+    "text": "仕上げ磨きを嫌がることがありますか？",
+    "ageGroup": "toddler"
+  },
+  {
+    "id": "q4_toddler",
+    "text": "歯並びで気になることはありますか？",
+    "ageGroup": "toddler"
+  },
+  
+  {
+    "id": "q1_school_early",
+    "text": "6歳臼歯（奥歯）が生えてきましたか？",
+    "ageGroup": "school_early"
+  },
+  {
+    "id": "q2_school_early",
+    "text": "歯茎から血が出ることがありますか？",
+    "ageGroup": "school_early"
+  },
+  {
+    "id": "q3_school_early",
+    "text": "むし歯がありますか？",
+    "ageGroup": "school_early"
+  },
+  {
+    "id": "q4_school_early",
+    "text": "うがいができますか？",
+    "ageGroup": "school_early"
+  },
+  
+  {
+    "id": "q1_school_late",
+    "text": "歯茎から血が出ることがありますか？",
+    "ageGroup": "school_late"
+  },
+  {
+    "id": "q2_school_late",
+    "text": "歯並びが気になりますか？",
+    "ageGroup": "school_late"
+  },
+  {
+    "id": "q3_school_late",
+    "text": "冷たいものや甘いものがしみますか？",
+    "ageGroup": "school_late"
+  },
+  {
+    "id": "q4_school_late",
+    "text": "自分で歯磨きをしっかりできていますか？",
+    "ageGroup": "school_late"
+  },
+  
+  {
+    "id": "q1_adolescent_early",
+    "text": "歯茎から血が出ることがありますか？",
+    "ageGroup": "adolescent_early"
+  },
+  {
+    "id": "q2_adolescent_early",
+    "text": "歯並びが気になりますか？",
+    "ageGroup": "adolescent_early"
+  },
+  {
+    "id": "q3_adolescent_early",
+    "text": "スポーツドリンクをよく飲みますか？",
+    "ageGroup": "adolescent_early"
+  },
+  {
+    "id": "q4_adolescent_early",
+    "text": "矯正治療を受けていますか？",
+    "ageGroup": "adolescent_early"
+  },
+  
+  {
+    "id": "q1_adolescent_late",
+    "text": "歯茎から血が出ることがありますか？",
+    "ageGroup": "adolescent_late"
+  },
+  {
+    "id": "q2_adolescent_late",
+    "text": "歯の着色が気になりますか？",
+    "ageGroup": "adolescent_late"
+  },
+  {
+    "id": "q3_adolescent_late",
+    "text": "冷たいものや甘いものがしみますか？",
+    "ageGroup": "adolescent_late"
+  },
+  {
+    "id": "q4_adolescent_late",
+    "text": "ホワイトニングに興味がありますか？",
+    "ageGroup": "adolescent_late"
+  },
+  {
+    "id": "q5_adolescent_late",
+    "text": "部活動などでマウスガードを使用していますか？",
+    "ageGroup": "adolescent_late"
+  },
+  
+  {
+    "id": "q1_young_adult",
+    "text": "歯茎が腫れたり血が出たりしますか？",
+    "ageGroup": "young_adult"
+  },
+  {
+    "id": "q2_young_adult",
+    "text": "口臭が気になりますか？",
+    "ageGroup": "young_adult"
+  },
+  {
+    "id": "q3_young_adult",
+    "text": "歯の着色や黄ばみが気になりますか？",
+    "ageGroup": "young_adult"
+  },
+  {
+    "id": "q4_young_adult",
+    "text": "歯がしみることがありますか？",
+    "ageGroup": "young_adult"
+  },
+  {
+    "id": "q5_young_adult",
+    "text": "ストレスで歯ぎしりをすることがありますか？",
+    "ageGroup": "young_adult"
+  },
+  
+  {
+    "id": "q1_middle_age",
+    "text": "歯茎が腫れたり血が出たりしますか？",
+    "ageGroup": "middle_age"
+  },
+  {
+    "id": "q2_middle_age",
+    "text": "歯茎が下がったり歯が長く見えるようになりましたか？",
+    "ageGroup": "middle_age"
+  },
+  {
+    "id": "q3_middle_age",
+    "text": "口臭が気になりますか？",
+    "ageGroup": "middle_age"
+  },
+  {
+    "id": "q4_middle_age",
+    "text": "歯の根元がしみるようになりましたか？",
+    "ageGroup": "middle_age"
+  },
+  
+  {
+    "id": "q1_mature_age",
+    "text": "歯茎が下がったり歯が長く見えるようになりましたか？",
+    "ageGroup": "mature_age"
+  },
+  {
+    "id": "q2_mature_age",
+    "text": "歯がぐらついたり動く感じがありますか？",
+    "ageGroup": "mature_age"
+  },
+  {
+    "id": "q3_mature_age",
+    "text": "口の中が乾燥しやすくなりましたか？",
+    "ageGroup": "mature_age"
+  },
+  {
+    "id": "q4_mature_age",
+    "text": "歯の根元がしみるようになりましたか？",
+    "ageGroup": "mature_age"
+  },
+  
+  {
+    "id": "q1_senior",
+    "text": "口の中が乾燥しやすいですか？",
+    "ageGroup": "senior"
+  },
+  {
+    "id": "q2_senior",
+    "text": "食べ物が飲み込みにくいことがありますか？",
+    "ageGroup": "senior"
+  },
+  {
+    "id": "q3_senior",
+    "text": "入れ歯に不具合がありますか？",
+    "ageGroup": "senior"
+  },
+  {
+    "id": "q4_senior",
+    "text": "むせることが多くなりましたか？",
+    "ageGroup": "senior"
+  },
+  {
+    "id": "q5_senior",
+    "text": "口臭が気になりますか？",
+    "ageGroup": "senior"
+  }
+] 

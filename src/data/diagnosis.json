@@ -1,0 +1,442 @@
+[
+  {
+    "id": "healthy_infant_early",
+    "title": "順調な発育状態です",
+    "description": "赤ちゃんの口腔機能は順調に発達しています。この時期の良い習慣を続けていきましょう。",
+    "advice": [
+      "哺乳びんは適切な時期に卒業しましょう",
+      "指しゃぶりは1歳頃まで様子を見ましょう",
+      "歯が生えたら優しくガーゼで拭いてあげましょう",
+      "口の中を清潔に保ちましょう"
+    ],
+    "ageGroup": "infant_early",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_infant_early.jpg",
+    "riskDescription": "乳児前期は口腔機能の基礎が形成される最も重要な時期です。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "infant_early"
+    }
+  },
+  {
+    "id": "concern_infant_early",
+    "title": "注意が必要な習慣があります",
+    "description": "口腔機能の発達に影響する習慣が見られます。適切な対応で改善できます。",
+    "advice": [
+      "哺乳びんの適切な使用方法を確認しましょう",
+      "口腔内の乾燥に注意しましょう",
+      "優しい口腔ケアを心がけましょう",
+      "専門的なアドバイスを受けましょう"
+    ],
+    "ageGroup": "infant_early",
+    "conditionKeys": ["habit_concern", "dry_mouth"],
+    "oralImage": "/images/oral/concern_infant_early.jpg",
+    "riskDescription": "習癖や口腔乾燥は将来の歯並びや口腔機能に影響する可能性があります。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "infant_early"
+    }
+  },
+  {
+    "id": "healthy_infant_late",
+    "title": "順調な発育状態です",
+    "description": "お子さんの口腔機能は順調に発達しています。歯磨きの習慣を身につけていきましょう。",
+    "advice": [
+      "歯が生えたら歯ブラシでの清拭を始めましょう",
+      "甘い飲み物の頻度に注意しましょう",
+      "哺乳びんで寝る習慣は避けましょう",
+      "定期的な歯科検診を受けましょう"
+    ],
+    "ageGroup": "infant_late",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_infant_late.jpg",
+    "riskDescription": "乳児後期は歯が生え始める重要な時期です。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "infant_late"
+    }
+  },
+  {
+    "id": "concern_infant_late",
+    "title": "注意が必要な習慣があります",
+    "description": "虫歯につながりやすい習慣が見られます。適切な対応で改善できます。",
+    "advice": [
+      "歯みがきを楽しい時間にする工夫をしましょう",
+      "甘い飲み物は時間を決めて与えましょう",
+      "哺乳びんでの就寝は控えましょう",
+      "フッ素配合歯磨き剤の使用を検討しましょう"
+    ],
+    "ageGroup": "infant_late",
+    "conditionKeys": ["caries_risk", "care_resistance", "bottle_feeding"],
+    "oralImage": "/images/oral/concern_infant_late.jpg",
+    "riskDescription": "不適切な哺乳習慣は虫歯や歯並びに影響する可能性があります。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "infant_late"
+    }
+  },
+  {
+    "id": "healthy_toddler",
+    "title": "良好な状態です",
+    "description": "お子さんの歯の状態は良好です。この状態を維持できるよう、定期的なケアを続けましょう。",
+    "advice": [
+      "保護者による仕上げ磨きを続けてください",
+      "甘いものは時間を決めて食べましょう",
+      "フッ素配合歯磨き剤を使用しましょう",
+      "定期的な歯科検診を受けましょう"
+    ],
+    "ageGroup": "toddler",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_toddler.jpg",
+    "riskDescription": "幼児期は虫歯が急速に進行しやすいため、継続的なケアが重要です。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "toddler"
+    }
+  },
+  {
+    "id": "caution_toddler",
+    "title": "注意が必要です",
+    "description": "虫歯になりやすい環境にあります。食生活やケアの見直しが必要です。",
+    "advice": [
+      "フッ素配合歯磨き剤の使用をおすすめします",
+      "おやつの時間と回数を決めましょう",
+      "仕上げ磨きの方法を見直しましょう",
+      "定期的なフッ素塗布を検討してください"
+    ],
+    "ageGroup": "toddler",
+    "conditionKeys": ["caries_risk", "plaque", "care_resistance"],
+    "oralImage": "/images/oral/caries_toddler.jpg",
+    "riskDescription": "虫歯菌が活発になりやすい環境です。早期の対策で進行を防げます。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "toddler"
+    }
+  },
+  {
+    "id": "healthy_school_early",
+    "title": "良好な状態です",
+    "description": "6歳臼歯の生え始める重要な時期です。適切なケアで健康を維持しましょう。",
+    "advice": [
+      "6歳臼歯のケアに注意しましょう",
+      "うがいの練習をしましょう",
+      "フッ素配合歯磨き剤を使用してください",
+      "定期的な歯科検診を受けましょう"
+    ],
+    "ageGroup": "school_early",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_school_early.jpg",
+    "riskDescription": "学童前期は6歳臼歯が生える重要な時期です。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "school_early"
+    }
+  },
+  {
+    "id": "caution_school_early",
+    "title": "注意が必要です",
+    "description": "6歳臼歯の虫歯や歯肉炎のリスクがあります。適切なケアが必要です。",
+    "advice": [
+      "6歳臼歯の清掃を重点的に行いましょう",
+      "正しいブラッシング方法を身につけましょう",
+      "歯茎の出血に注意してください",
+      "定期的なフッ素塗布を受けましょう"
+    ],
+    "ageGroup": "school_early",
+    "conditionKeys": ["caries_risk", "gingivitis", "six_year_molar"],
+    "oralImage": "/images/oral/caries_school_early.jpg",
+    "riskDescription": "6歳臼歯は虫歯になりやすく、一生使う大切な歯です。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "school_early"
+    }
+  },
+  {
+    "id": "healthy_school_late",
+    "title": "良好な状態です",
+    "description": "歯の状態は良好です。自立した歯磨きができるよう指導していきましょう。",
+    "advice": [
+      "自分での歯磨きを上達させましょう",
+      "歯並びの変化に注意してください",
+      "フッ素配合歯磨き剤を使用しましょう",
+      "定期的な歯科検診を受けましょう"
+    ],
+    "ageGroup": "school_late",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_school_late.jpg",
+    "riskDescription": "学童後期は歯の生え変わりが活発な時期です。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、お子さんの口腔機能の発達をチェックします。",
+      "ageGroup": "school_late"
+    }
+  },
+  {
+    "id": "caution_school_late",
+    "title": "注意が必要です",
+    "description": "歯肉炎や虫歯のリスクがあります。セルフケアの向上が必要です。",
+    "advice": [
+      "正しいブラッシング方法を身につけましょう",
+      "歯間清掃具の使用を始めましょう",
+      "知覚過敏の症状に注意してください",
+      "矯正治療の必要性を相談しましょう"
+    ],
+    "ageGroup": "school_late",
+    "conditionKeys": ["gingivitis", "sensitivity", "orthodontic_need"],
+    "oralImage": "/images/oral/gingivitis_school_late.jpg",
+    "riskDescription": "思春期の始まりとともに歯茎が敏感になります。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、口腔機能の発達をチェックします。",
+      "ageGroup": "school_late"
+    }
+  },
+  {
+    "id": "healthy_adolescent_early",
+    "title": "良好な状態です",
+    "description": "歯の状態は良好です。思春期特有の変化に注意しながらケアを続けましょう。",
+    "advice": [
+      "歯間清掃具の使用を習慣化しましょう",
+      "矯正治療の必要性を相談してください",
+      "スポーツドリンクの摂取に注意しましょう",
+      "定期的な歯科検診を受けましょう"
+    ],
+    "ageGroup": "adolescent_early",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_adolescent_early.jpg",
+    "riskDescription": "思春期はホルモンの影響で歯茎が腫れやすくなります。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、口腔機能の発達をチェックします。",
+      "ageGroup": "adolescent_early"
+    }
+  },
+  {
+    "id": "gingivitis_adolescent_early",
+    "title": "歯肉炎の兆候があります",
+    "description": "思春期性歯肉炎の可能性があります。適切なケアで改善できます。",
+    "advice": [
+      "正しいブラッシング方法を身につけましょう",
+      "歯間清掃具の使用を始めましょう",
+      "スポーツドリンクの摂取量に注意してください",
+      "定期的な歯科クリーニングを受けましょう"
+    ],
+    "ageGroup": "adolescent_early",
+    "conditionKeys": ["gingivitis", "bleeding", "orthodontic"],
+    "oralImage": "/images/oral/gingivitis_adolescent_early.jpg",
+    "riskDescription": "思春期のホルモン変化により歯茎が炎症を起こしやすくなります。",
+    "clinicColumn": {
+      "title": "小児口腔機能検査",
+      "description": "舌圧・唇閉鎖力の測定を通じて、口腔機能の発達をチェックします。",
+      "ageGroup": "adolescent_early"
+    }
+  },
+  {
+    "id": "healthy_adolescent_late",
+    "title": "良好な状態です",
+    "description": "歯の状態は良好です。大人に向けて適切なケア習慣を身につけましょう。",
+    "advice": [
+      "歯間清掃を毎日行いましょう",
+      "ホワイトニングの相談をしてみましょう",
+      "スポーツ時のマウスガード使用を検討してください",
+      "定期的な歯科検診を受けましょう"
+    ],
+    "ageGroup": "adolescent_late",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_adolescent_late.jpg",
+    "riskDescription": "成人期に向けて口腔ケア習慣の確立が重要です。",
+    "clinicColumn": {
+      "title": "はちクラブ2025「炎症を知る・戦う」",
+      "description": "歯周病は慢性炎症の一つです。全身の健康にも影響するため、早期発見・治療が大切です。",
+      "ageGroup": "adolescent_late"
+    }
+  },
+  {
+    "id": "concern_adolescent_late",
+    "title": "注意が必要です",
+    "description": "歯の着色や知覚過敏の症状があります。適切なケアが必要です。",
+    "advice": [
+      "ホワイトニング専用歯磨き剤を使用しましょう",
+      "知覚過敏対策を行いましょう",
+      "歯間清掃具を毎日使用してください",
+      "専門的な治療を検討しましょう"
+    ],
+    "ageGroup": "adolescent_late",
+    "conditionKeys": ["staining", "sensitivity", "whitening"],
+    "oralImage": "/images/oral/staining_adolescent_late.jpg",
+    "riskDescription": "着色や知覚過敏は適切なケアで改善できます。",
+    "clinicColumn": {
+      "title": "はちクラブ2025「炎症を知る・戦う」",
+      "description": "歯周病は慢性炎症の一つです。全身の健康にも影響するため、早期発見・治療が大切です。",
+      "ageGroup": "adolescent_late"
+    }
+  },
+  {
+    "id": "healthy_young_adult",
+    "title": "良好な状態です",
+    "description": "現在の口腔状態は良好です。予防ケアを継続して健康を維持しましょう。",
+    "advice": [
+      "定期的な歯科検診とクリーニングを受けましょう",
+      "ストレス管理で歯ぎしりを予防しましょう",
+      "バランスの良い食事を心がけましょう",
+      "歯間清掃を毎日行いましょう"
+    ],
+    "ageGroup": "young_adult",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_young_adult.jpg",
+    "riskDescription": "若年成人期は歯周病のリスクが高まり始める時期です。",
+    "clinicColumn": {
+      "title": "はちクラブ2025「炎症を知る・戦う」",
+      "description": "歯周病は慢性炎症の一つです。全身の健康にも影響するため、早期発見・治療が大切です。",
+      "ageGroup": "young_adult"
+    }
+  },
+  {
+    "id": "periodontitis_young_adult",
+    "title": "歯周病の兆候があります",
+    "description": "歯周病の初期症状が見られます。早期の治療とセルフケアの改善が必要です。",
+    "advice": [
+      "歯間清掃具を毎日使用しましょう",
+      "歯周病専用の歯磨き剤を使用してください",
+      "定期的な歯科治療を受けましょう",
+      "禁煙・節酒を心がけましょう"
+    ],
+    "ageGroup": "young_adult",
+    "conditionKeys": ["periodontitis", "bleeding", "halitosis"],
+    "oralImage": "/images/oral/periodontitis_young_adult.jpg",
+    "riskDescription": "歯周病は放置すると歯を失う原因となり、全身疾患にも関連します。",
+    "clinicColumn": {
+      "title": "はちクラブ2025「炎症を知る・戦う」",
+      "description": "歯周病は慢性炎症の一つです。全身の健康にも影響するため、早期発見・治療が大切です。",
+      "ageGroup": "young_adult"
+    }
+  },
+  {
+    "id": "healthy_middle_age",
+    "title": "良好な状態です",
+    "description": "現在の口腔状態は良好です。中年期の変化に対応したケアを継続しましょう。",
+    "advice": [
+      "歯周病の進行に注意しましょう",
+      "歯茎の退縮への対策を始めましょう",
+      "定期的な歯科検診を継続してください",
+      "全身の健康管理も重要です"
+    ],
+    "ageGroup": "middle_age",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_middle_age.jpg",
+    "riskDescription": "中年期は歯周病が進行しやすく、全身疾患との関連も高まります。",
+    "clinicColumn": {
+      "title": "はちクラブ2025「炎症を知る・戦う」",
+      "description": "歯周病は慢性炎症の一つです。全身の健康にも影響するため、早期発見・治療が大切です。",
+      "ageGroup": "middle_age"
+    }
+  },
+  {
+    "id": "periodontitis_middle_age",
+    "title": "歯周病の進行があります",
+    "description": "歯周病が進行しています。専門的な治療とセルフケアの見直しが必要です。",
+    "advice": [
+      "歯周病専用の治療を受けましょう",
+      "歯間清掃具を毎日使用してください",
+      "歯茎の退縮に対応したケアを行いましょう",
+      "生活習慣の改善を心がけましょう"
+    ],
+    "ageGroup": "middle_age",
+    "conditionKeys": ["periodontitis", "recession", "halitosis"],
+    "oralImage": "/images/oral/periodontitis_middle_age.jpg",
+    "riskDescription": "歯周病の進行は歯を失うリスクを高め、全身の健康にも影響します。",
+    "clinicColumn": {
+      "title": "はちクラブ2025「炎症を知る・戦う」",
+      "description": "歯周病は慢性炎症の一つです。全身の健康にも影響するため、早期発見・治療が大切です。",
+      "ageGroup": "middle_age"
+    }
+  },
+  {
+    "id": "healthy_mature_age",
+    "title": "年齢相応の良好な状態です",
+    "description": "年齢的な変化はありますが、適切なケアで健康を維持できています。",
+    "advice": [
+      "歯茎の退縮に対応したケアを行いましょう",
+      "根面う蝕の予防に注意してください",
+      "知覚過敏の対策を行いましょう",
+      "定期的な歯科検診を継続しましょう"
+    ],
+    "ageGroup": "mature_age",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_mature_age.jpg",
+    "riskDescription": "壮年期は歯茎の退縮や根面う蝕のリスクが高まります。",
+    "clinicColumn": {
+      "title": "おくちの健口診断",
+      "description": "年齢とともに現れる口腔機能の変化をチェックし、適切なケア方法をご提案します。",
+      "ageGroup": "mature_age"
+    }
+  },
+  {
+    "id": "recession_mature_age",
+    "title": "歯茎の退縮が見られます",
+    "description": "加齢による歯茎の退縮が進んでいます。適切なケアで進行を抑制しましょう。",
+    "advice": [
+      "知覚過敏用の歯磨き剤を使用してください",
+      "やわらかめの歯ブラシを選びましょう",
+      "歯間清掃具で根面のケアを行いましょう",
+      "定期的なフッ素塗布を受けましょう"
+    ],
+    "ageGroup": "mature_age",
+    "conditionKeys": ["recession", "sensitivity", "root_caries_risk"],
+    "oralImage": "/images/oral/recession_mature_age.jpg",
+    "riskDescription": "歯茎の退縮により根面が露出し、虫歯や知覚過敏のリスクが高まります。",
+    "clinicColumn": {
+      "title": "おくちの健口診断",
+      "description": "年齢とともに現れる口腔機能の変化をチェックし、適切なケア方法をご提案します。",
+      "ageGroup": "mature_age"
+    }
+  },
+  {
+    "id": "healthy_senior",
+    "title": "年齢に応じた良好な状態です",
+    "description": "年齢に応じた口腔機能を維持できています。継続的なケアで健康を保ちましょう。",
+    "advice": [
+      "口腔保湿ケアを行いましょう",
+      "嚥下機能の維持に努めましょう",
+      "入れ歯のメンテナンスを行いましょう",
+      "定期的な歯科検診を受けましょう"
+    ],
+    "ageGroup": "senior",
+    "conditionKeys": ["healthy"],
+    "oralImage": "/images/oral/healthy_senior.jpg",
+    "riskDescription": "高齢期は口腔機能の低下と全身の健康維持が重要になります。",
+    "clinicColumn": {
+      "title": "おくちの健口診断",
+      "description": "年齢とともに現れる口腔機能の変化をチェックし、適切なケア方法をご提案します。",
+      "ageGroup": "senior"
+    }
+  },
+  {
+    "id": "dysfunction_senior",
+    "title": "口腔機能の低下があります",
+    "description": "加齢による口腔機能の低下が見られます。専門的なケアとリハビリが必要です。",
+    "advice": [
+      "口腔保湿剤を使用しましょう",
+      "嚥下訓練を行いましょう",
+      "入れ歯の調整を受けましょう",
+      "口腔機能向上の訓練を受けましょう"
+    ],
+    "ageGroup": "senior",
+    "conditionKeys": ["dry_mouth", "swallowing_difficulty", "denture"],
+    "oralImage": "/images/oral/dysfunction_senior.jpg",
+    "riskDescription": "口腔機能の低下は誤嚥性肺炎のリスクを高め、全身の健康に影響します。",
+    "clinicColumn": {
+      "title": "おくちの健口診断",
+      "description": "年齢とともに現れる口腔機能の変化をチェックし、適切なケア方法をご提案します。",
+      "ageGroup": "senior"
+    }
+  }
+] 

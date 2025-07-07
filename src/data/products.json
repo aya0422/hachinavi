@@ -1,0 +1,231 @@
+[
+  {
+    "id": "rapis_toothbrush",
+    "name": "ラピス歯ブラシ",
+    "description": "0～2歳のお子さん専用歯ブラシ。安全性を重視した設計で、初めての歯磨きにおすすめです。",
+    "category": "toothbrush",
+    "ageGroups": ["infant_early", "infant_late"],
+    "conditions": ["healthy", "caries_risk"],
+    "price": 180,
+    "image": "/images/products/rapis_toothbrush.jpg"
+  },
+  {
+    "id": "checkup_gel_banana",
+    "name": "チェックアップgelバナナ",
+    "description": "0～2歳のお子さん用フッ素ジェル。バナナ味で歯磨きが楽しくなります。研磨剤無配合で歯にやさしい。",
+    "category": "toothpaste",
+    "ageGroups": ["infant_early", "infant_late"],
+    "conditions": ["healthy", "caries_risk"],
+    "price": 620,
+    "image": "/images/products/checkup_gel_banana.jpg"
+  },
+  {
+    "id": "tuft17_m",
+    "name": "タフト17（M）",
+    "description": "3～9歳のお子さんに最適なMサイズの歯ブラシ。小さなお口に適したヘッドサイズで奥歯までしっかり届きます。",
+    "category": "toothbrush",
+    "ageGroups": ["toddler", "school_early"],
+    "conditions": ["healthy", "gingivitis", "caries_risk"],
+    "price": 200,
+    "image": "/images/products/tuft17_m.jpg"
+  },
+  {
+    "id": "checkup_gel_grape",
+    "name": "チェックアップgelグレープ（うがい不要）",
+    "description": "3～5歳のお子さん用フッ素ジェル（うがいができないお子さん向け）。グレープ味で研磨剤無配合。",
+    "category": "toothpaste",
+    "ageGroups": ["toddler"],
+    "conditions": ["healthy", "caries_risk", "cannot_rinse"],
+    "price": 620,
+    "image": "/images/products/checkup_gel_grape.jpg"
+  },
+  {
+    "id": "checkup_kodomo",
+    "name": "チェックアップkodomo",
+    "description": "6～9歳のお子さん用フッ素配合歯磨き剤（うがいができるお子さん向け）。500ppmフッ化物配合で子どもの歯にやさしい低研磨性。",
+    "category": "toothpaste",
+    "ageGroups": ["school_early"],
+    "conditions": ["healthy", "caries_risk", "can_rinse"],
+    "price": 280,
+    "image": "/images/products/checkup_kodomo.jpg"
+  },
+  {
+    "id": "tuft20_m",
+    "name": "タフト20（M）",
+    "description": "10～12歳のお子さんに最適。6歳臼歯が生える時期の学童に適した設計の歯ブラシです。",
+    "category": "toothbrush",
+    "ageGroups": ["school_late"],
+    "conditions": ["healthy", "gingivitis", "caries_risk"],
+    "price": 200,
+    "image": "/images/products/tuft20_m.jpg"
+  },
+  {
+    "id": "ruscello_b_m20",
+    "name": "ルシェロB-M20",
+    "description": "13歳以上の方におすすめの歯ブラシ。効率的なプラーク除去が可能な設計です。",
+    "category": "toothbrush",
+    "ageGroups": ["adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["healthy", "gingivitis", "periodontitis"],
+    "price": 320,
+    "image": "/images/products/ruscello_b_m20.jpg"
+  },
+  {
+    "id": "checkup_standard",
+    "name": "チェックアップスタンダード",
+    "description": "13歳以上の方用フッ素配合歯磨き剤。むし歯予防に効果的な1450ppmフッ化物配合。",
+    "category": "toothpaste",
+    "ageGroups": ["adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["healthy", "caries_risk", "root_caries_risk"],
+    "price": 580,
+    "image": "/images/products/checkup_standard.jpg"
+  },
+  {
+    "id": "ruscello_p_20_m",
+    "name": "ルシェロP-20（M）",
+    "description": "歯周病進行の方におすすめのMサイズ歯ブラシ。歯茎にやさしい毛先で効果的なケアが可能。",
+    "category": "toothbrush",
+    "ageGroups": ["adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["gingivitis", "periodontitis", "bleeding"],
+    "price": 320,
+    "image": "/images/products/ruscello_p_20_m.jpg"
+  },
+  {
+    "id": "ruscello_p_20_s",
+    "name": "ルシェロP-20（S）",
+    "description": "歯周病進行の方におすすめのSサイズ歯ブラシ。歯茎にやさしい毛先で効果的なケアが可能。",
+    "category": "toothbrush",
+    "ageGroups": ["adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["gingivitis", "periodontitis", "bleeding"],
+    "price": 320,
+    "image": "/images/products/ruscello_p_20_s.jpg"
+  },
+  {
+    "id": "spt_gel",
+    "name": "SPTジェル",
+    "description": "歯周病治療中・メインテナンス中の方専用ジェル。歯周病進行の予防に効果的。",
+    "category": "toothpaste",
+    "ageGroups": ["adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["gingivitis", "periodontitis", "bleeding"],
+    "price": 1200,
+    "image": "/images/products/spt_gel.jpg"
+  },
+  {
+    "id": "systema_sensitive",
+    "name": "システマセンシティブ",
+    "description": "知覚過敏症状を緩和する歯磨き剤。歯茎の退縮による敏感な歯におすすめです。",
+    "category": "toothpaste",
+    "ageGroups": ["young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["sensitivity", "recession", "root_caries_risk"],
+    "price": 900,
+    "image": "/images/products/systema_sensitive.jpg"
+  },
+  {
+    "id": "concool_ip",
+    "name": "コンクールIP",
+    "description": "インプラント中の方専用歯磨き剤。インプラント周囲炎の予防に効果的。",
+    "category": "toothpaste",
+    "ageGroups": ["young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["implant"],
+    "price": 1500,
+    "image": "/images/products/concool_ip.jpg"
+  },
+  {
+    "id": "oral_peace_implant",
+    "name": "オーラルピース（インプラント用）",
+    "description": "インプラント中の方におすすめの天然由来口腔保湿剤。優しい成分でインプラント周囲をケア。",
+    "category": "mouthwash",
+    "ageGroups": ["young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["implant"],
+    "price": 1800,
+    "image": "/images/products/oral_peace_implant.jpg"
+  },
+  {
+    "id": "ruscello_white",
+    "name": "ルシェロホワイト",
+    "description": "ホワイトニング中の方におすすめの歯磨き剤。着色除去と歯質強化を同時に実現。",
+    "category": "toothpaste",
+    "ageGroups": ["adolescent_late", "young_adult", "middle_age"],
+    "conditions": ["whitening", "staining"],
+    "price": 1200,
+    "image": "/images/products/ruscello_white.jpg"
+  },
+  {
+    "id": "tuft_brush_m",
+    "name": "タフトブラシ（M）",
+    "description": "矯正治療中の小児におすすめのMサイズワンタフトブラシ。ブラケット周りの清掃に最適。",
+    "category": "toothbrush",
+    "ageGroups": ["toddler", "school_early", "school_late", "adolescent_early"],
+    "conditions": ["orthodontic"],
+    "price": 250,
+    "image": "/images/products/tuft_brush_m.jpg"
+  },
+  {
+    "id": "tuft_brush_s",
+    "name": "タフトブラシ（S）",
+    "description": "矯正治療中の小児におすすめのSサイズワンタフトブラシ。細かい部分の清掃に最適。",
+    "category": "toothbrush",
+    "ageGroups": ["toddler", "school_early", "school_late", "adolescent_early"],
+    "conditions": ["orthodontic"],
+    "price": 250,
+    "image": "/images/products/tuft_brush_s.jpg"
+  },
+  {
+    "id": "interdental_brush_s",
+    "name": "歯間ブラシ（Sサイズ）",
+    "description": "歯間清掃が必要な方におすすめのSサイズ歯間ブラシ。狭い歯間にも入ります。",
+    "category": "interdental",
+    "ageGroups": ["adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["gingivitis", "periodontitis", "interdental_cleaning"],
+    "price": 380,
+    "image": "/images/products/interdental_s.jpg"
+  },
+  {
+    "id": "interdental_brush_m",
+    "name": "歯間ブラシ（Mサイズ）",
+    "description": "歯間清掃が必要な方におすすめのMサイズ歯間ブラシ。中程度の歯間に適しています。",
+    "category": "interdental",
+    "ageGroups": ["young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["periodontitis", "recession", "interdental_cleaning"],
+    "price": 380,
+    "image": "/images/products/interdental_m.jpg"
+  },
+  {
+    "id": "dental_floss",
+    "name": "ルシェロフロス",
+    "description": "歯間清掃が必要な方におすすめの高品質デンタルフロス。歯間の汚れを効率的に除去。",
+    "category": "interdental",
+    "ageGroups": ["school_late", "adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["healthy", "gingivitis", "periodontitis", "interdental_cleaning"],
+    "image": "/images/products/ruscello_floss_new_actual.jpg"
+  },
+  {
+    "id": "oral_peace",
+    "name": "オーラルピース",
+    "description": "天然由来の口腔保湿剤。ドライマウスの方や高齢者の口腔ケアに最適です。",
+    "category": "mouthwash",
+    "ageGroups": ["mature_age", "senior"],
+    "conditions": ["dry_mouth", "halitosis", "healthy"],
+    "price": 1800,
+    "image": "/images/products/oral_peace.jpg"
+  },
+  {
+    "id": "denture_cleaner",
+    "name": "入れ歯洗浄剤",
+    "description": "部分入れ歯・総入れ歯の洗浄に。除菌・消臭効果で清潔な入れ歯を保ちます。",
+    "category": "other",
+    "ageGroups": ["senior"],
+    "conditions": ["denture", "halitosis"],
+    "price": 450,
+    "image": "/images/products/denture_cleaner.jpg"
+  },
+  {
+    "id": "tongue_cleaner",
+    "name": "舌クリーナー",
+    "description": "舌の汚れを効果的に除去。口臭の主な原因となる舌苔のケアに最適です。",
+    "category": "other",
+    "ageGroups": ["adolescent_early", "adolescent_late", "young_adult", "middle_age", "mature_age", "senior"],
+    "conditions": ["halitosis", "dry_mouth"],
+    "price": 320,
+    "image": "/images/products/tongue_cleaner.jpg"
+  }
+] 
