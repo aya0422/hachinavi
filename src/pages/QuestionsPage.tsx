@@ -16,40 +16,58 @@ const QuestionsPage: React.FC<QuestionsPageProps> = ({
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState(0);
   const [startX, setStartX] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [animationDirection, setAnimationDirection] = useState<'left' | 'right' | null>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
   // マウス/タッチ操作中
   const handleMove = useCallback((clientX: number) => {
-    if (!isDragging) return;
+    if (!isDragging || isAnimating) return;
     
     const offset = clientX - startX;
     setDragOffset(offset);
-  }, [isDragging, startX]);
+  }, [isDragging, startX, isAnimating]);
 
   // マウス/タッチ操作終了
   const handleEnd = useCallback(() => {
-    if (!isDragging) return;
+    if (!isDragging || isAnimating) return;
     
     setIsDragging(false);
     
     const threshold = 100; // スワイプ判定の閾値
     
     if (Math.abs(dragOffset) > threshold) {
+      // カードを飛ばすアニメーション開始
+      setIsAnimating(true);
+      
       if (dragOffset > 0) {
         // 右スワイプ = いいえ
-        if (questions[currentQuestionIndex]) {
-          onAnswer(questions[currentQuestionIndex].id, false);
-        }
+        setAnimationDirection('right');
+        setTimeout(() => {
+          if (questions[currentQuestionIndex]) {
+            onAnswer(questions[currentQuestionIndex].id, false);
+          }
+          setIsAnimating(false);
+          setAnimationDirection(null);
+          setDragOffset(0);
+        }, 300);
       } else {
         // 左スワイプ = はい
-        if (questions[currentQuestionIndex]) {
-          onAnswer(questions[currentQuestionIndex].id, true);
-        }
+        setAnimationDirection('left');
+        setTimeout(() => {
+          if (questions[currentQuestionIndex]) {
+            onAnswer(questions[currentQuestionIndex].id, true);
+          }
+          setIsAnimating(false);
+          setAnimationDirection(null);
+          setDragOffset(0);
+        }, 300);
       }
+    } else {
+      // 元の位置に戻す
+      setDragOffset(0);
     }
-    
-    setDragOffset(0);
-  }, [isDragging, dragOffset, questions, currentQuestionIndex, onAnswer]);
+  }, [isDragging, dragOffset, questions, currentQuestionIndex, onAnswer, isAnimating]);
 
   // グローバルマウスイベントの設定
   useEffect(() => {
@@ -81,6 +99,7 @@ const QuestionsPage: React.FC<QuestionsPageProps> = ({
 
   // マウス/タッチ操作開始
   const handleStart = (clientX: number) => {
+    if (isAnimating) return;
     setIsDragging(true);
     setStartX(clientX);
     setDragOffset(0);
@@ -107,18 +126,56 @@ const QuestionsPage: React.FC<QuestionsPageProps> = ({
 
   // カードの変形計算
   const getCardStyle = () => {
-    const rotation = dragOffset * 0.1; // 回転角度
-    const opacity = Math.max(0.7, 1 - Math.abs(dragOffset) * 0.002);
+    if (isAnimating && animationDirection) {
+      // アニメーション中は画面外に飛ばす
+      const flyDistance = animationDirection === 'left' ? -400 : 400;
+      const rotation = animationDirection === 'left' ? -30 : 30;
+      
+      return {
+        transform: `translateX(${flyDistance}px) rotate(${rotation}deg)`,
+        opacity: 0,
+        transition: 'all 0.3s ease-out'
+      };
+    }
+    
+    if (isDragging) {
+      const rotation = dragOffset * 0.1; // 回転角度
+      const opacity = Math.max(0.7, 1 - Math.abs(dragOffset) * 0.002);
+      
+      return {
+        transform: `translateX(${dragOffset}px) rotate(${rotation}deg)`,
+        opacity,
+        transition: 'none'
+      };
+    }
     
     return {
-      transform: `translateX(${dragOffset}px) rotate(${rotation}deg)`,
-      opacity,
-      transition: isDragging ? 'none' : 'all 0.3s ease-out'
+      transform: 'translateX(0px) rotate(0deg)',
+      opacity: 1,
+      transition: 'all 0.3s ease-out'
+    };
+  };
+
+  // 次のカードのスタイル
+  const getNextCardStyle = () => {
+    if (isAnimating) {
+      return {
+        transform: 'translateX(0px) scale(1)',
+        opacity: 1,
+        transition: 'all 0.3s ease-out'
+      };
+    }
+    
+    return {
+      transform: 'translateX(0px) scale(0.95)',
+      opacity: 0.7,
+      transition: 'all 0.3s ease-out'
     };
   };
 
   // スワイプ方向の表示
   const getSwipeIndicator = () => {
+    if (isAnimating) return null;
     if (Math.abs(dragOffset) < 50) return null;
     
     if (dragOffset > 0) {
@@ -126,6 +183,25 @@ const QuestionsPage: React.FC<QuestionsPageProps> = ({
     } else {
       return <div className="swipe-indicator yes">はい</div>;
     }
+  };
+
+  // 背景の色変化
+  const getBackgroundOverlay = () => {
+    if (isAnimating) return null;
+    if (Math.abs(dragOffset) < 50) return null;
+    
+    const intensity = Math.min(Math.abs(dragOffset) / 200, 0.3);
+    const color = dragOffset > 0 ? 'rgba(255, 99, 132, ' : 'rgba(75, 192, 192, ';
+    
+    return (
+      <div 
+        className="swipe-background-overlay"
+        style={{
+          background: color + intensity + ')',
+          opacity: intensity
+        }}
+      />
+    );
   };
 
   return (
@@ -157,9 +233,25 @@ const QuestionsPage: React.FC<QuestionsPageProps> = ({
         </div>
 
         <div className="question-card-stack">
+          {/* 背景オーバーレイ */}
+          {getBackgroundOverlay()}
+          
+          {/* 次のカード（背景用） */}
+          {currentQuestionIndex + 1 < questions.length && (
+            <div 
+              className="question-card next-card"
+              style={getNextCardStyle()}
+            >
+              <div className="question-text">
+                {questions[currentQuestionIndex + 1].text}
+              </div>
+            </div>
+          )}
+          
+          {/* 現在のカード */}
           <div 
             ref={cardRef}
-            className="question-card swipeable"
+            className="question-card swipeable current-card"
             style={getCardStyle()}
             onMouseDown={handleMouseDown}
             onTouchStart={handleTouchStart}
